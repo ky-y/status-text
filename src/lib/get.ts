@@ -1,4 +1,4 @@
-import * as statusCodes from "./status-codes";
+import * as statusCodes from "./list";
 
 export const statusText = (statusCode: number): string => {
     const key = "HTTP" + statusCode;
