@@ -34,3 +34,8 @@ MIT License
 ## Acknowledgment
 
 - [RFC 7231](https://datatracker.ietf.org/doc/html/rfc7231)
+
+## Links
+
+- [ky-y.](https://ky-y.dev/)
+- [@ky-y./status-text @ npm](https://www.npmjs.com/package/@ky-y./status-text)
