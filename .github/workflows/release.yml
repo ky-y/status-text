@@ -1,0 +1,38 @@
+name: Publish Package to npmjs
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: '22.x'
+                  registry-url: 'https://registry.npmjs.org'
+
+            - name: Cache Dependencies
+              id: npm_cache
+              uses: actions/cache@v3
+              with:
+                  path: '**/node_modules'
+                  key: "${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}"
+
+            - name: Install Dependencies
+              if: steps.yarn_cache.outputs.cache-hit != 'true'
+              run: yarn install --prefer-offline
+
+            - name: Publish Package to npmjs
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  npm version `npm view @ky-y./status-text version` --allow-same-version
+                  npm version patch
+                  npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

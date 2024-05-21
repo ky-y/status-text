@@ -1,0 +1,7 @@
+vite.config.ts
+.gitignore
+.github
+.idea
+.yarn
+.gitattributes
+.yarnrc.yml
