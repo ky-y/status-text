@@ -5,3 +5,6 @@ vite.config.ts
 .yarn
 .gitattributes
 .yarnrc.yml
+.eslintignore
+.prettierrc
+eslint.config.cjs
