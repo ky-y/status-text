@@ -1,8 +1,11 @@
 {
     "name": "@ky-y./status-text",
+    "type": "module",
     "version": "1.0.0",
     "scripts": {
-        "build": "tsc & vite build"
+        "build": "tsc & vite build",
+        "eslint": "eslint \"./**/*.ts\"",
+        "eslint:fix": "eslint \"./**/*.ts\" --fix"
     },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
