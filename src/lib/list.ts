@@ -1,5 +1,7 @@
 export const HTTP100 = "Continue";
 export const HTTP101 = "Switching Protocols";
+export const HTTP102 = "Processing";
+export const HTTP103 = "Early Hints";
 
 export const HTTP200 = "OK";
 export const HTTP201 = "Created";
@@ -8,6 +10,9 @@ export const HTTP203 = "Non-Authoritative Information";
 export const HTTP204 = "No Content";
 export const HTTP205 = "Reset Content";
 export const HTTP206 = "Partial Content";
+export const HTTP207 = "Multi-Status";
+export const HTTP208 = "Already Reported";
+export const HTTP226 = "IM Used";
 
 export const HTTP300 = "Multiple Choices";
 export const HTTP301 = "Moved Permanently";
@@ -38,7 +43,14 @@ export const HTTP416 = "Range Not Satisfiable";
 export const HTTP417 = "Expectation Failed";
 export const HTTP421 = "Misdirected Request";
 export const HTTP422 = "Unprocessable Content";
+export const HTTP423 = "Locked";
+export const HTTP424 = "Failed Dependency";
+export const HTTP425 = "Too Early";
 export const HTTP426 = "Upgrade Required";
+export const HTTP428 = "Precondition Required";
+export const HTTP429 = "Too Many Requests";
+export const HTTP431 = "Request Header Fields Too Large";
+export const HTTP451 = "Unavailable For Legal Reasons";
 
 export const HTTP500 = "Internal Server Error";
 export const HTTP501 = "Not Implemented";
@@ -46,3 +58,8 @@ export const HTTP502 = "Bad Gateway";
 export const HTTP503 = "Service Unavailable";
 export const HTTP504 = "Gateway Timeout";
 export const HTTP505 = "HTTP Version Not Supported";
+export const HTTP506 = "Variant Also Negotiates";
+export const HTTP507 = "Insufficient Storage";
+export const HTTP508 = "Loop Detected";
+export const HTTP510 = "Not Extended";
+export const HTTP511 = "Network Authentication Required";

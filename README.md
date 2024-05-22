@@ -31,9 +31,17 @@ console.log(statusText(999)); // => "Unknown Status"
 
 MIT License
 
-## Acknowledgment
+## Acknowledgments
 
-- [RFC 7231](https://datatracker.ietf.org/doc/html/rfc7231)
+- [RFC 7231 - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231)
+- [RFC 2295 - Transparent Content Negotiation in HTTP](https://datatracker.ietf.org/doc/html/rfc2295)
+- [RFC 3229 - Delta encoding in HTTP](https://datatracker.ietf.org/doc/html/rfc3229)
+- [RFC 6585 - Additional HTTP Status Codes](https://datatracker.ietf.org/doc/html/rfc6585)
+- [RFC 7725 - An HTTP Status Code to Report Legal Obstacles](https://datatracker.ietf.org/doc/html/rfc7725)
+- [RFC 8470 - Using Early Data in HTTP](https://datatracker.ietf.org/doc/html/rfc8470)
+- [RFC 4918 - HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)](https://datatracker.ietf.org/doc/html/rfc4918)
+- [RFC 5842 - Binding Extensions to Web Distributed Authoring and Versioning (WebDAV)](https://datatracker.ietf.org/doc/html/rfc5842)
+
 
 ## Links
 
